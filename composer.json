@@ -1,5 +1,5 @@
 {
-    "name": "estahn/json-query-wrapper",
+    "name": "networkninja/json-query-wrapper",
     "type": "library",
     "description": "Wrapper for jq, a lightweight and flexible command-line JSON processor",
     "keywords": ["jq", "json", "query"],
@@ -9,9 +9,12 @@
         {
             "name": "Enrico Stahn",
             "email": "enrico.stahn@gmail.com"
+        },
+        {
+            "name": "Dylan McDonald",
+            "email": "dmcdonald@networkninja.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": "^7.1|^8",
         "symfony/process": "^4|^5"
