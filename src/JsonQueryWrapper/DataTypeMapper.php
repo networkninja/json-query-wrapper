@@ -29,17 +29,17 @@ class DataTypeMapper
      */
     public function map($value)
     {
-        $boolean = filter_var($value, FILTER_VALIDATE_BOOL, FILTER_NULL_ON_FAILURE);
-        if ($boolean !== null) {
-            return $boolean;
-        }
-
         if ($value === 'null') {
             return null;
         }
 
         if (is_numeric($value)) {
             return $value + 0;
+        }
+
+        $boolean = filter_var($value, FILTER_VALIDATE_BOOL, FILTER_NULL_ON_FAILURE);
+        if ($boolean !== null) {
+            return $boolean;
         }
 
         // Map parser error
